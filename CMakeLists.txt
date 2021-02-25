@@ -1,0 +1,113 @@
+cmake_minimum_required(VERSION 3.5)
+project(serverDev)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(Server chapter01/hello_server.cpp)
+add_executable(Client chapter01/hello_client.cpp)
+add_executable(low_open chapter01/low_open.cpp)
+add_executable(ansi_open chapter01/ansi_open.cpp)
+add_executable(low_read chapter01/low_read.cpp)
+add_executable(fd_seri chapter01/fd_seri.cpp)
+
+add_executable(tcp_server chapter02/tcp_server.cpp)
+add_executable(tcp_client chapter02/tcp_client.cpp)
+
+add_executable(endian_conv chapter03/endian_conv.cpp)
+add_executable(inet_addr chapter03/inet_addr.cpp)
+add_executable(inet_aton chapter03/inet_aton.cpp)
+add_executable(inet_ntoa chapter03/inet_ntoa.cpp)
+
+add_executable(echo_server chapter04/echo_server.cpp)
+add_executable(echo_client chapter04/echo_client.cpp)
+
+add_executable(iter_server chapter04/iter_server.cpp)
+add_executable(iter_client chapter04/iter_client.cpp)
+
+add_executable(op_server chapter05/op_server.cpp)
+add_executable(op_client chapter05/op_client.cpp)
+add_executable(ex_server chapter05/ex_server.cpp)
+add_executable(ex_client chapter05/ex_client.cpp)
+add_executable(file_server chapter05/file_server.cpp)
+add_executable(file_client chapter05/file_client.cpp)
+
+add_executable(uecho_server chapter06/uecho_server.cpp)
+add_executable(uecho_client chapter06/uecho_client.cpp)
+add_executable(bound_host1 chapter06/bound_host1.cpp)
+add_executable(bound_host2 chapter06/bound_host2.cpp)
+add_executable(ueach_server chapter06/ueach_server.cpp)
+add_executable(ueach_client chapter06/ueach_client.cpp)
+
+add_executable(fserver chapter07/file_server.cpp)
+add_executable(fclient chapter07/file_client.cpp)
+
+add_executable(hostname chapter08/gethostbyname.cpp)
+add_executable(hostaddr chapter08/gethostbyaddr.cpp)
+
+add_executable(socktype chapter09/sock_type.cpp)
+add_executable(getbuf chapter09/get_buf.cpp)
+add_executable(setbuf chapter09/set_buf.cpp)
+add_executable(reuseadr chapter09/reuseadr_eserver.cpp)
+
+add_executable(fork chapter10/fork.cpp)
+add_executable(zombie chapter10/zombie.cpp)
+add_executable(wait chapter10/wait.cpp)
+add_executable(waitpid chapter10/waitpid.cpp)
+add_executable(signal chapter10/signal.cpp)
+add_executable(sigaction chapter10/sigaction.cpp)
+add_executable(rmzombie chapter10/remove_zombie.cpp)
+add_executable(echo_mpserv chapter10/echo_mpserv.cpp)
+add_executable(echo_mpclnt chapter10/echo_mpclient.cpp)
+add_executable(cmp_fd chapter10/cmp_fd.cpp)
+add_executable(event_proc chapter10/event_proc.cpp)
+
+add_executable(pipe1 chapter11/pipe1.cpp)
+add_executable(pipe2 chapter11/pipe2.cpp)
+add_executable(pipe3 chapter11/pipe3.cpp)
+add_executable(estrserv chapter11/echo_storeserv.cpp)
+add_executable(ipc chapter11/ipc.cpp)
+
+add_executable(select chapter12/select.cpp)
+add_executable(esserv chapter12/echo_selectserv.cpp)
+
+add_executable(oob_send chapter13/oob_send.cpp)
+add_executable(oob_recv chapter13/oob_recv.cpp)
+add_executable(psend chapter13/peek_send.cpp)
+add_executable(precv chapter13/peek_recv.cpp)
+add_executable(writev chapter13/writev.cpp)
+add_executable(readv chapter13/readv.cpp)
+
+add_executable(news_sender chapter14/news_sender.cpp)
+add_executable(news_receiver chapter14/news_receiver.cpp)
+add_executable(news_sndr_brd chapter14/news_sender_brd.cpp)
+add_executable(news_recv_brd chapter14/news_receiver_brd.cpp)
+
+add_executable(syscpy chapter15/syscpy.cpp)
+add_executable(stdcpy chapter15/stdcpy.cpp)
+add_executable(desto chapter15/desto.cpp)
+add_executable(todes chapter15/todes.cpp)
+add_executable(estdserv chapter15/echo_stdserv.cpp)
+add_executable(estdclnt chapter15/echo_stdclnt.cpp)
+
+add_executable(sep_serv chapter16/sep_serv.cpp)
+add_executable(sep_clnt chapter16/sep_clnt.cpp)
+add_executable(dup chapter16/dup.cpp)
+add_executable(sep_serv2 chapter16/sep_serv2.cpp)
+
+add_executable(eplserv chapter17/echo_epollserv.cpp)
+add_executable(EPLT chapter17/echo_EPLTserv.cpp)
+add_executable(EPET chapter17/echo_EPETserv.cpp)
+add_executable(c_server chapter17/chat_server.cpp)
+add_executable(c_clnt chapter17/chat_clnt.cpp)
+
+add_executable(thread1 chapter18/thread1.cpp)
+add_executable(thread2 chapter18/thread2.cpp)
+add_executable(thread3 chapter18/thread3.cpp)
+add_executable(thread4 chapter18/thread4.cpp)
+add_executable(mutex chapter18/mutex.cpp)
+add_executable(sem chapter18/semaphore.cpp)
+add_executable(chat_server chapter18/chat_server.cpp)
+add_executable(chat_clnt chapter18/chat_clnt.cpp)
+add_executable(mtserv chapter18/echo_mtserv.cpp)
+
+add_executable(webserv chapter24/webserv_linux.cpp)
